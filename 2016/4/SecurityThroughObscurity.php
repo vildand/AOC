@@ -16,7 +16,6 @@ class SecurityThroughObscurity
   public function getAnswer1():string
   {
     $iSum = 0;
-    //$aLines[] = 'not-a-real-room-404[oarel]';
     $aLines = explode( "\n", $this->input);
     foreach ($aLines as $line) {
 
@@ -46,6 +45,7 @@ class SecurityThroughObscurity
         $aaRes[strlen($match)][$match[0]] = $match[0];
       }
 
+      //match and final sort
       $bRealRoom = true;
       foreach ($aaRes as $aRes) {
         while($aRes) {
@@ -75,14 +75,9 @@ class SecurityThroughObscurity
 
   public function getAnswer2()
   {
-
-    $str = 'qqweq';
-    $str = substr($str, 1);
-    var_dump($str);
-
-    /*$aLines = explode("\n", $this->input);
+    $aLines = explode("\n", $this->input);
     foreach ($aLines as $line) {
     }
-    return "Answer2 = " . "\n";*/
+    return "Answer2 = " . "\n";
   }
 }
