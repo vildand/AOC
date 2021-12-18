@@ -1,3 +1,3 @@
-# AOC 2016
+# AOC
 
-https://adventofcode.com/2016/
+https://adventofcode.com
